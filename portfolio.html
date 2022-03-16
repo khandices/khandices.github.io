@@ -6,43 +6,123 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Khandice's Portfolio</title>
+  <script src="https://kit.fontawesome.com/197f5b9e01.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../styles/stylesheet.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
   <header>
-    <h1>khandice_schuhmann</h1>
-    <img src="../images/2044284_menu_hamburger_icon.png" class="nav-img" alt="menu icon" />
     <nav id="nav-bar">
-      <div class="nav-menu">
-        <button class="dropdown-button">Menu</button>
-        <div class="dropdown-content">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="about.html">About</a>
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </div>
-      </div>
+      <ul>
+        <li><a class="nav-link" href="portfolio.html">Projects</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="index.html">Home</a></li>
+      </ul>
     </nav>
   </header>
-  <h2 id="projects">These are some projects I've completed while at my time at Ada. Projects are completed with a focus on RESTful APIs and OOP principles.</h2>
+  <h4 id="projects">These are some projects I've completed while at my time at Ada. Projects are completed with a focus
+    on RESTful APIs and OOP principles.</h4>
   <section id="portfolio-grid">
-    <a href="https://github.com/khandices/swap-meet" id="portfolio-grid-item">SWAP MEET</a>
-    <a href="https://github.com/khandices/viewing-party" id="portfolio-grid-item">VIEWING PARTY</a>
-    <a href="https://github.com/khandices/FCC-Technical-Documentation-Page" id="portfolio-grid-item">TECHNICAL DOC PAGE</a>
-    <a href="https://github.com/khandices/FCC-Product-Landing-Page" id="portfolio-grid-item">TEA PRODUCT PAGE</a>
+    <div class="portfolio-grid-item">
+      <b>NewLeaf Trading App</b>
+      <p>Given 3 weeks to learn a new programming language and complete a product life cycle from conception to
+        delivery.</p>
+      <ul class="links">
+        <li><a href="https://github.com/khandices/NewLeaf" target="_blank">GitHub</a></li>
+        <li><a
+            href="https://www.canva.com/design/DAE6ggtTodA/bvEkWOHKnTiMg_Z3o4AHmw/view?utm_content=DAE6ggtTodA&utm_campaign=designshare&utm_medium=link&utm_source=publishpresent"
+            target="_blank">View Project</a></li>
+      </ul>
+
+      <ul class="tech-stack">
+        <li>
+          <e class="tech-yellow"> ❊ </e>Swift
+        </li>
+        <li>
+          <e class="tech-yellow"> ❊ </e>SwiftUI
+        </li>
+        <li>
+          <e class="tech-yellow"> ❊ </e>Google Firebase
+        </li>
+      </ul>
+    </div>
+    <div class="portfolio-grid-item">
+      <b>Inspiration Board</b>
+      <p>Collaborated in a team setting to create a full-stack web application. Utilized React props to send & receive
+        data interacting with back-end. Used data received to pass thorugh callbacks to update state.</p>
+      <ul class="links">
+        <li><a href="https://github.com/khandices/back-end-inspiration-board" target="_blank">GitHub</a></li>
+        <li><a href="https://kardashians-front-end.herokuapp.com/" target="_blank">View Project</a></li>
+      </ul>
+
+
+      <ul class="tech-stack">
+        <li>
+          <e class="tech-yellow"> ❊ </e>Python
+        </li>
+        <li>
+          <e class="tech-yellow"> ❊ </e>Flask
+        </li>
+        <li>
+          <e class="tech-yellow"> ❊ </e>React/JS
+        </li>
+        <li>
+          <e class="tech-yellow"> ❊ </e>HTML5/CSS3
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="portfolio-grid-item">
+      <b>Task List</b>
+      <p>Demonstrates the request-response cycle. I utilized Flask to make route calls to an external API.</p>
+      <ul class="links">
+        <li><a href="https://github.com/khandices/task-list-api" target="_blank">GitHub</a></li>
+      </ul>
+
+      <ul class="tech-stack">
+        <li>
+          <e class="tech-yellow"> ❊ </e>Python
+        </li>
+        <li>
+          <e class="tech-yellow"> ❊ </e>Flask
+        </li>
+        <li>
+          <e class="tech-yellow"> ❊ </e>PostgresSQL
+        </li>
+      </ul>
+    </div>
+
+    <div class="portfolio-grid-item">
+      <b>Leaves of Paradise Landing Page</b>
+      <ul class="links">
+        <li><a href="https://github.com/khandices/FCC-Product-Landing-Page" target="_blank">GitHub</a></li>
+        <li><a href="https://kardashians-front-end.herokuapp.com/" target="_blank">View Project</a></li>
+      </ul>
+
+      <ul class="tech-stack">
+        <li>
+          <e class="tech-yellow"> ❊ </e>HTML5
+        </li>
+        <li>
+          <e class="tech-yellow"> ❊ </e>CSS3
+        </li>
+      </ul>
+    </div>
+
   </section>
 
   <footer>
-    <p>Want to work together? <a href="mailto:s.khandice@gmail.com" id="email-link"> Contact me </a></p>
-    <a class="github-link" href="https://github.com/khandices"><img src="../images/GitHub-Mark-120px-plus.png"
-        alt="Github logo"></a>
-    <a class="linkedin-link" href="https://www.linkedin.com/in/khandice-schuhmann/"><img src="../images/LI-In-Bug.png"
-        alt="Linkedin logo"></a>
-    <h5>© Khandice Schuhmann 2022</h5>
+    <div class="links">
+      <a class="github-link" href="https://github.com/khandices" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a class="linkedin-link" href="https://www.linkedin.com/in/khandice-schuhmann/" target="_blank"><i
+          class="fa-brands fa-linkedin"> </i></a>
+    </div>
+    <h5>Made with &hearts; Khandice Schuhmann © 2022</h5>
   </footer>
 </body>
 
