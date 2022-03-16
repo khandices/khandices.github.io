@@ -1,0 +1,157 @@
+h1 {
+font-size: 50px;
+text-align: center;
+background: url("https://images.unsplash.com/photo-1567922045116-2a00fae2ed03?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8dGVhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+color: white;
+line-height: 300px;
+height: 300px;
+font-family: "Playfair Display", serif;
+letter-spacing: 2px;
+text-shadow: 2px 1px 3px #23201a;
+} 
+
+#navigation {
+    display: flex;
+}
+#header-img {
+    max-width: 110px;
+
+}
+
+#nav-bar {
+top: 0px;
+margin-left: auto;
+}
+
+#nav-bar ul {
+display: flex;
+list-style: none;
+}
+
+#nav-bar li {
+font-size: 20px;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+list-style-type: none;
+display: flex;
+background-color: white;
+}
+
+#nav-bar li:hover {
+text-decoration: underline;
+}
+
+#nav-bar a {
+text-decoration: none;
+color: #777658;
+}
+
+#main-section {
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+#product-info {
+width: 800px;
+color: #3e3d42;
+padding: 20px;
+text-align: center;
+}
+
+.welcome-blurb {
+font-family: "Playfair Display", serif;
+font-size: 300px;
+}
+
+.about-product {
+text-align: justify;
+font-family: "Montserrat", sans-serif;
+}
+
+.product-info-photo {
+height: 500px;
+width: 400px;
+float: left;
+margin: 0px 40px 40px 0px;
+border-radius: 2px;
+}
+.product-info-video {
+margin: 30px 100px;
+}
+
+#buy-product {
+display: flex;
+justify-content: center;
+flex: 0 0 50px;
+margin: 10px 30px;
+height: 300px;
+width: 1000px;
+}
+
+.product {
+text-align: center;
+padding: 5px;
+margin: 0px;
+width: 200px;
+height: 350px;
+font-size: 20px;
+padding: 40px;
+}
+.tea-product-img {
+width: 200px;
+height: 230px;
+}
+
+#sign-up {
+margin: 100px;
+text-align: center;
+}
+
+button {
+background-color: white;
+border: 1px solid;
+border-color: orange;
+border-radius: 5px;
+padding: 9px 11px;
+margin: 7px 0px;
+}
+
+button:hover {
+cursor: pointer;
+color: orange;
+transition: all 150ms ease-in-out;
+box-shadow: 0px 3px 10px 0px orange;
+}
+
+input[type="email"] {
+padding: 7px 50px 7px 10px;
+margin: 5px 10px;
+font-size: 15px;
+}
+input[type="submit"] {
+background-color: white;
+border: 1px solid;
+border-color: orange;
+border-radius: 5px;
+padding: 9px 11px;
+}
+input[type="submit"]:hover {
+cursor: pointer;
+color: orange;
+transition: all 150ms ease-in-out;
+box-shadow: 0px 3px 10px 0px orange;
+}
+
+footer {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+© 2022 GitHub, Inc.
+Terms
