@@ -1,10 +1,10 @@
 /* MAIN CSS */
 /* Color pallette:
-green: #346751
-green2: #3FA796
+green: #26623E
 white: #F9F3DF
-lavender: #c78ecd
-peach: #FFC898
+accent/links: #C3A13B
+main accent (dark): #F5F4DA
+main accent (light): #0F271C
 yellow: #FFD56B
 font color: #3E3D42 */
 
@@ -75,8 +75,8 @@ font color: #3E3D42 */
 
 
 body {
-  background-color: #346751;
-  color: #f9f3df;
+  background-color: #26623E;
+  color: black;
   margin: 150px 250px;
 }
 
@@ -84,6 +84,7 @@ body {
 .about-me-container {
   display: flex;
   flex-direction: row;
+  background-color: rgba(255,255,245, 0.5);
 }
 
 
@@ -121,6 +122,6 @@ footer {
 
 
 .contact-link:hover {
-  color: #c78ecd;
+  color: #C3A13B;
   transition: all 150ms ease-in-out;
 }
