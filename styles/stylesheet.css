@@ -76,7 +76,7 @@ font color: #3E3D42 */
 
 body {
   background-color: #26623E;
-  color: black;
+  color: #0F271C;
   margin: 150px 250px;
 }
 
@@ -85,11 +85,12 @@ body {
   display: flex;
   flex-direction: row;
   background-color: rgba(255,255,245, 0.5);
+  border-radius: 0.5em;
 }
 
 
 .about-me {
-  font-size: 15px;
+  font-size: 17px;
   padding: 100px 100px 0px 100px;
 }
 
@@ -116,7 +117,7 @@ footer {
 
 .contact-link {
   text-decoration: none;
-  color: black;
+  color: #0F271C;
   padding: 5px;
 }
 
