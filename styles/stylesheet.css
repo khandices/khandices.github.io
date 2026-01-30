@@ -1,97 +1,125 @@
 /* MAIN CSS */
 /* Color pallette:
-green: #26623E
-white: #F9F3DF
-accent/links: #C3A13B
-main accent (dark): #F5F4DA
-main accent (light): #0F271C
-yellow: #FFD56B
-font color: #3E3D42 */
-
-
-
-
-@media screen and (min-width: 400px) {
-
-
-  #about-me .my-pic-border {
-    z-index: 1;
-    position: absolute;
-    top: 120px;
-    left: 350px;
-    border: solid #c78ecd;
-    width: 300px;
-    height: 400px;
-  }
+Button {
+lightest-green: #9fe3c2,
+med-green: #7dd1a9,
+dark-green: #7dd1a9,
+outline: #084f3d
 }
+Background {
+soft-yellow: #f5efbc;
+*/
 
 
-@media screen and (min-width: 730px) {
-  #about-me .personal-pic {
-    height: 400px;
-    image-resolution: 300dpi;
-
-  }
-
-  #portfolio-grid b {
-    font-size: 22px;
-    text-decoration: underline;
-  }
-
-  #portfolio-grid p {
-    font-size: 20px;
-  }
 
 
-  #portfolio-grid li {
-    font-size: 13px;
-
-  }
+/*@media screen and (min-width: 400px) {*/
 
 
-  #portfolio-grid ul {
-    margin: 5px 100px;
+/*  #about-me .my-pic-border {*/
+/*    z-index: 1;*/
+/*    position: absolute;*/
+/*    top: 120px;*/
+/*    left: 350px;*/
+/*    border: solid #c78ecd;*/
+/*    width: 300px;*/
+/*    height: 400px;*/
+/*  }*/
+/*}*/
 
-  }
+
+/*@media screen and (min-width: 730px) {*/
+/*  #about-me .personal-pic {*/
+/*    height: 400px;*/
+/*    image-resolution: 300dpi;*/
+
+/*  }*/
+
+/*  #portfolio-grid b {*/
+/*    font-size: 22px;*/
+/*    text-decoration: underline;*/
+/*  }*/
+
+/*  #portfolio-grid p {*/
+/*    font-size: 20px;*/
+/*  }*/
 
 
-  #portfolio-grid a {
-    font-size: 17px;
-  }
+/*  #portfolio-grid li {*/
+/*    font-size: 13px;*/
+
+/*  }*/
 
 
-  #portfolio-grid .portfolio-grid-item {
-    margin: auto;
-    margin-bottom: 10px;
-    padding: 15px;
-    background-color: #4e846d;
-    height: 200px;
-    width: 600px;
-    text-align: center;
-    border-radius: 3px;
-    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
-  }
-}
+/*  #portfolio-grid ul {*/
+/*    margin: 5px 100px;*/
 
+/*  }*/
+
+
+/*  #portfolio-grid a {*/
+/*    font-size: 17px;*/
+/*  }*/
+
+
+/*  #portfolio-grid .portfolio-grid-item {*/
+/*    margin: auto;*/
+/*    margin-bottom: 10px;*/
+/*    padding: 15px;*/
+/*    background-color: #4e846d;*/
+/*    height: 200px;*/
+/*    width: 600px;*/
+/*    text-align: center;*/
+/*    border-radius: 3px;*/
+/*    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);*/
+/*  }*/
+/*}*/
+
+/*MAIN PAGE STYLES*/
 
 body {
-  background-color: #26623E;
-  color: #0F271C;
+  background-color: #f5efbc;
   margin: 150px 250px;
 }
 
-
-.about-me-container {
-  display: flex;
-  flex-direction: row;
-  background-color: rgba(255,255,245, 0.5);
-  border-radius: 0.5em;
+.menuHeader {
+    border: red 2px solid;
 }
 
+.menuLeft {
+    /*float: left;*/
+    border: blue 2px solid;
+}
 
-.about-me {
-  font-size: 17px;
-  padding: 100px 100px 0px 100px;
+.menuLeft img {
+    height: 20px;
+    width: 20px;
+}
+
+.menuRight {
+    /*float: right;*/
+    border: blue 2px solid;
+}
+
+.mainBody {
+    border: black 5px dotted;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.leftPanel{
+    border: red 2px solid;
+}
+
+.rightPanel{
+    border: red 2px solid;
+}
+
+.myPhoto {
+    image-resolution: 300dpi;
+    display: block;
+    max-height: 200px;
+    border-radius: 20em;
 }
 
 .contact-links {
@@ -100,12 +128,6 @@ body {
   flex-direction: column;
 }
 
-.personal-pic {
-  image-resolution: 300dpi;
-  display: block;
-  max-height: 200px;
-  border-radius: 20em;
-}
 
 
 footer {
