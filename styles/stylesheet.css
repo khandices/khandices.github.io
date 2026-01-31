@@ -1,11 +1,8 @@
 
 /* COLOR PALETTES:
-    Button {
-    lightest-green: #CDFFE8,
+    light-green: #CDFFE8,
     med-green: #67c99a,
     dark-green: #0b756c,
-    }
-    Background {
     soft-yellow: #f5efbc;
 */
 
@@ -14,14 +11,18 @@ TABLE OF CONTENTS: (helpful for finding styling quickly)
     {
         MAIN PAGE,
         NAV BAR,
-        BUTTON,
-        WELCOME TEXT
+        LEFT PANEL,
+        WELCOME TEXT,
+        BUTTONS/BUTTON
     }
 */
 
 
 
 /* MAIN PAGE STYLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Rubik+Bubbles&display=swap');
+
 
 body {
   background-color: #f5efbc;
@@ -41,6 +42,7 @@ body {
 .rightPanel{
     border: red 2px solid;
 }
+
 
 /* NAV BAR */
 .menuHeader {
@@ -63,20 +65,66 @@ body {
 }
 
 
-/* BUTTON */
+/*LEFT PANEL*/
+.leftPanel{
+    border: red 2px solid;
+}
+
+
+
+/* WELCOME */
+.welcomeHeader{
+    font-size: 10em;
+    font-family: 'Modak', system-ui;
+    color: #CDFFE8;
+    -webkit-text-stroke: 5px #0b756c;
+    animation-name: floating;
+    animation: floating 3s ease-in-out infinite;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-shadow: #777658 0 55px 50px;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* BUTTONS/BUTTON */
+.buttons{
+    border: red 2px solid;
+    padding: 50px;
+    margin: 25px;
+}
+
 .button{
+    margin: 15px;
     text-transform: uppercase;
     border: #0b756c 2px solid;
     background-color: #c8fae2;
     color: #084f3d;
-    padding: 35px;
-    border-radius: 30%;
-    box-shadow: 1px 20px #67c99a, 1px 40px #0b756c;
+    padding: 2em 3em;;
+    border-radius: 1.5em;
+    box-shadow: 1px 15px #67c99a, 1px 35px #0b756c;
     text-decoration: none;
+    font-family: "Monaco", sans-serif;
+    font-size: 1em;
+    position: relative;
+    transition: top 2s ease;
 }
 
 .button:hover {
-    box-shadow: 1px 20px #67c99a, 1px 40px #0b756c;
+    top: .5em;
 }
 
 
