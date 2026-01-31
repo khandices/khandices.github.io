@@ -14,9 +14,9 @@ function createMenu({ items, className = "", renderItem }) {
 
 function createMenuLeft() {
     const items = [
-        { href: "https://codepen.io/khandice", icon: "/images/codepen.svg" },
-        { href: "https://github.com/khandices", icon: "/images/Github.svg" },
-        { href: "https://www.linkedin.com/in/khandice-schuhmann/", icon: "/images/linkedin.svg" },
+        { href: "https://codepen.io/khandice", icon: "/images/codepen.svg", altText: "Link to Codepen" },
+        { href: "https://github.com/khandices", icon: "/images/Github.svg", altText: "Link to GitHub" },
+        { href: "https://www.linkedin.com/in/khandice-schuhmann/", icon: "/images/linkedin.svg", altText: "Link to LinkedIn" },
     ];
 
     return createMenu({
@@ -25,6 +25,7 @@ function createMenuLeft() {
         renderItem: (item) => {
             const menuItem = document.createElement("a");
             menuItem.className = "menuLeftItem";
+            menuItem.alt=item.altText;
             menuItem.href = item.href;
 
             const img = document.createElement("img");
@@ -58,8 +59,8 @@ function createMenuRight() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const header = document.getElementById("menuHeader");
+    const menuHeader = document.getElementById("menuHeader");
 
-    header.appendChild(createMenuLeft());
-    header.appendChild(createMenuRight());
+    menuHeader.appendChild(createMenuLeft());
+    menuHeader.appendChild(createMenuRight());
 });

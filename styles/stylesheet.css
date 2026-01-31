@@ -1,15 +1,98 @@
-/* MAIN CSS */
-/* Color pallette:
-Button {
-lightest-green: #9fe3c2,
-med-green: #7dd1a9,
-dark-green: #7dd1a9,
-outline: #084f3d
-}
-Background {
-soft-yellow: #f5efbc;
+
+/* COLOR PALETTES:
+    Button {
+    lightest-green: #CDFFE8,
+    med-green: #67c99a,
+    dark-green: #0b756c,
+    }
+    Background {
+    soft-yellow: #f5efbc;
 */
 
+/*
+TABLE OF CONTENTS: (helpful for finding styling quickly)
+    {
+        MAIN PAGE,
+        NAV BAR,
+        BUTTON,
+        WELCOME TEXT
+    }
+*/
+
+
+
+/* MAIN PAGE STYLES */
+
+body {
+  background-color: #f5efbc;
+  margin: 150px 250px;
+}
+
+.mainBody {
+    border: black 5px dotted;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.leftPanel{
+    border: red 2px solid;
+}
+
+.rightPanel{
+    border: red 2px solid;
+}
+
+/* NAV BAR */
+.menuHeader {
+    border: red 2px solid;
+}
+
+.menuLeft {
+    /*float: left;*/
+    border: blue 2px solid;
+}
+
+.menuLeft img {
+    height: 40px;
+    width: 40px;
+}
+
+.menuRight {
+    /*float: right;*/
+    border: blue 2px solid;
+}
+
+
+/* BUTTON */
+.button{
+    text-transform: uppercase;
+    border: #0b756c 2px solid;
+    background-color: #c8fae2;
+    color: #084f3d;
+    padding: 35px;
+    border-radius: 30%;
+    box-shadow: 1px 20px #67c99a, 1px 40px #0b756c;
+    text-decoration: none;
+}
+
+.button:hover {
+    box-shadow: 1px 20px #67c99a, 1px 40px #0b756c;
+}
+
+
+/* WELCOME TEXT */
+.myPhoto {
+    image-resolution: 300dpi;
+    display: block;
+    max-height: 200px;
+    border-radius: 20em;
+}
+
+footer {
+  margin: auto;
+  padding: 40px 60px;
+  text-align: center;
+}
 
 
 
@@ -74,77 +157,3 @@ soft-yellow: #f5efbc;
 /*    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);*/
 /*  }*/
 /*}*/
-
-/*MAIN PAGE STYLES*/
-
-body {
-  background-color: #f5efbc;
-  margin: 150px 250px;
-}
-
-.menuHeader {
-    border: red 2px solid;
-}
-
-.menuLeft {
-    /*float: left;*/
-    border: blue 2px solid;
-}
-
-.menuLeft img {
-    height: 20px;
-    width: 20px;
-}
-
-.menuRight {
-    /*float: right;*/
-    border: blue 2px solid;
-}
-
-.mainBody {
-    border: black 5px dotted;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.leftPanel{
-    border: red 2px solid;
-}
-
-.rightPanel{
-    border: red 2px solid;
-}
-
-.myPhoto {
-    image-resolution: 300dpi;
-    display: block;
-    max-height: 200px;
-    border-radius: 20em;
-}
-
-.contact-links {
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-footer {
-  margin: auto;
-  padding: 40px 60px;
-  text-align: center;
-}
-
-
-.contact-link {
-  text-decoration: none;
-  color: #0F271C;
-  padding: 5px;
-}
-
-
-.contact-link:hover {
-  color: #C3A13B;
-  transition: all 150ms ease-in-out;
-}
