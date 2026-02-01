@@ -30,7 +30,7 @@ function createMenuLeft() {
 
             const img = document.createElement("img");
             img.src = item.icon;
-            img.alt = "";
+            img.alt = item.altText;
 
             menuItem.appendChild(img);
             return menuItem;
