@@ -13,7 +13,8 @@ TABLE OF CONTENTS: (helpful for finding styling quickly)
         NAV BAR,
         LEFT PANEL,
         WELCOME TEXT,
-        BUTTONS/BUTTON
+        BUTTONS/BUTTON,
+        PROJECT PAGE,
     }
 */
 
@@ -23,35 +24,55 @@ TABLE OF CONTENTS: (helpful for finding styling quickly)
 
 @import url('https://fonts.googleapis.com/css2?family=Modak&family=Rubik+Bubbles&display=swap');
 
+* {
+    box-sizing: border-box;
+}
 
-body {
-  background-color: #f5efbc;
-  margin: 150px 250px;
+.mainPage {
+    background-color: #f5efbc;
+    margin: 0;
+    padding-top: 100px;
 }
 
 .mainBody {
-    border: black 5px dotted;
     display: flex;
-    justify-content: space-evenly;
-}
-
-.leftPanel{
-    border: red 2px solid;
+    padding-top: 150px;
+    padding-left: 400px;
 }
 
 .rightPanel{
-    border: red 2px solid;
+    padding-top: 100px;
+    padding-left: 100px;
 }
 
 
 /* NAV BAR */
+
+.navBar{
+    display: block;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 20px;
+}
+
+.menuLineBreak {
+    color: #0b756c;
+}
+
 .menuHeader {
-    border: red 2px solid;
+    display: flex;
+    justify-content: space-between;
 }
 
 .menuLeft {
-    /*float: left;*/
-    border: blue 2px solid;
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+
 }
 
 .menuLeft img {
@@ -60,14 +81,23 @@ body {
 }
 
 .menuRight {
-    /*float: right;*/
-    border: blue 2px solid;
+    font-family: "Monaco", sans-serif;
+    display: flex;
+    gap: 20px;
+    padding-top: 30px;
+    padding-right: 20px;
+    font-size: 1.25em;
 }
 
+.menuRightItem {
+    text-decoration: none;
+    color: #0b756c;
+    transition: top 2s ease;
+}
 
-/*LEFT PANEL*/
-.leftPanel{
-    border: red 2px solid;
+.menuRightItem:hover {
+    text-decoration: underline;
+
 }
 
 
@@ -101,10 +131,10 @@ body {
 
 
 /* BUTTONS/BUTTON */
+
 .buttons{
-    border: red 2px solid;
     padding: 50px;
-    margin: 25px;
+    margin: 0 25px 25px 65px;
 }
 
 .button{
@@ -113,7 +143,7 @@ body {
     border: #0b756c 2px solid;
     background-color: #c8fae2;
     color: #084f3d;
-    padding: 2em 3em;;
+    padding: 2em 3em;
     border-radius: 1.5em;
     box-shadow: 1px 15px #67c99a, 1px 35px #0b756c;
     text-decoration: none;
@@ -144,19 +174,50 @@ footer {
 
 
 
+/* PROJECT PAGE STYLES */
+
+.projectPage{
+    background-color: #f5efbc;
+    margin: 150px auto;
+    max-width: 1200px;
+    padding-top: 100px;
+}
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 50px;
+    padding: 50px;
+}
+
+.projectCard {
+    background-color: #CDFFE8;
+    width: 500px;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.projectName {
+    font-size: 3em;
+    text-align: center;
+}
+
+.projectCard img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.projectCard a {
+    padding: 16px;
+}
+
+
 /*@media screen and (min-width: 400px) {*/
-
-
-/*  #about-me .my-pic-border {*/
-/*    z-index: 1;*/
-/*    position: absolute;*/
-/*    top: 120px;*/
-/*    left: 350px;*/
-/*    border: solid #c78ecd;*/
-/*    width: 300px;*/
-/*    height: 400px;*/
-/*  }*/
-/*}*/
 
 
 /*@media screen and (min-width: 730px) {*/
