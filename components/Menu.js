@@ -15,7 +15,7 @@ function createMenu({ items, className = "", renderItem }) {
 function createMenuLeft() {
     const items = [
         { href: "https://codepen.io/khandice", icon: "/images/codepen.svg", altText: "Link to Codepen" },
-        { href: "https://github.com/khandices", icon: "/images/Github.svg", altText: "Link to GitHub" },
+        { href: "https://github.com/khandices", icon: "/images/github.svg", altText: "Link to GitHub" },
         { href: "https://www.linkedin.com/in/khandice-schuhmann/", icon: "/images/linkedin.svg", altText: "Link to LinkedIn" },
     ];
 
@@ -40,7 +40,7 @@ function createMenuLeft() {
 
 function createMenuRight() {
     const items = [
-        { href: "/about", label: "About" },
+        { href: "/", label: "About" },
         { href: "/projects", label: "Projects" },
         { href: "mailto:s.khandice@gmail.com", label: "Contact" },
     ];
