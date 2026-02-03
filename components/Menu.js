@@ -40,8 +40,8 @@ function createMenuLeft() {
 
 function createMenuRight() {
     const items = [
-        { href: "/", label: "About" },
-        { href: "/projects", label: "Projects" },
+        { href: "https://khandices.github.io", label: "About" },
+        { href: "https://khandices.github.io/portfolio", label: "Projects" },
         { href: "mailto:s.khandice@gmail.com", label: "Contact" },
     ];
 
