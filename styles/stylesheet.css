@@ -178,22 +178,23 @@ footer {
 
 .projectPage{
     background-color: #f5efbc;
-    margin: 150px auto;
+    margin: 5rem 35rem;
     max-width: 1200px;
     padding-top: 100px;
 }
 
-.projectGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 50px;
+.projectList {
+    display: flex;
+    flex-direction: column;
     padding: 50px;
+    margin: 0 auto;
 }
 
 .projectCard {
     background-color: #CDFFE8;
     width: 500px;
     border-radius: 12px;
+    margin: 20px;
     padding: 16px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     display: flex;
@@ -201,21 +202,36 @@ footer {
 }
 
 .projectName {
+    font-family: "Zalando Sans", sans-serif;
+    font-weight: 550;
+    color: #084f3d;
     font-size: 3em;
     text-align: center;
 }
 
-.projectCard img {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
+.projectSummary {
+    padding: 0px 20px;
+    text-align: center;
+    color: #084f3d;
+}
+
+.techList {
+    padding: 1rem 8.5rem;
+}
+
+.projectLinks {
+    padding: 0 0 0 10.5rem;
 }
 
 .projectCard a {
-    padding: 16px;
+    padding: 0 .5rem;
+    text-decoration: none;
+    color: black;
 }
 
+.projectCard a:hover {
+    color: mediumspringgreen;
+}
 
 /*@media screen and (min-width: 400px) {*/
 
